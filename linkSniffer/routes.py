@@ -53,7 +53,6 @@ def home():
         results  = []
         results.append(email_list)
         results.append(link_list)
-        print(results)
         return render_template('index.html', form=form, results=results)
     else:
         return render_template('index.html', form=form)

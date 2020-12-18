@@ -53,4 +53,3 @@ for link in soup.find_all("link"):
     except Exception as e:
         link_href = None
     cprint(link_href, 'blue')
-
