@@ -13,7 +13,7 @@ import re
 @app.route('/home')
 def home():
     form = SearchForm()
-
+    '''
     url = request.args.get('imput_url')
 
     source = requests.get(url).text
@@ -22,7 +22,7 @@ def home():
     soup.find(re.compile('[\w\.-]+@[\w\.-]+\.\w+'))
 
 
-
+    '''
 
     return render_template('index.html', form = form)
 
